@@ -1,0 +1,10 @@
+﻿syntax = "proto3";
+option csharp_namespace = "ConsoleApp1";
+package consoleapp1;
+
+import "messages/Protos.proto";
+
+
+message ExampleImport {
+	messages.Example nested = 1;
+}
